@@ -1,0 +1,16 @@
+<table mdbTable striped="true" class="grey lighten-1 black-text">
+    <thead>
+      <tr>
+        <th *ngFor="let head of columns" scope="col">{{head}} </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr mdbTableCol *ngFor="let el of result">
+        {{el}}
+        <td *ngFor="let head of columns">{{el[head]}}</td>
+        
+      </tr>
+    </tbody>
+  </table>
+  
+ 
